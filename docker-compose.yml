@@ -1,0 +1,21 @@
+version: "3"
+services:
+  test-task-api:
+    container_name: test-task-api
+    command: bash -c "php -S 0.0.0.0:8000 -t public"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - test-task-api:/usr/src/test-task-api
+    ports:
+      - "8000:8000"
+    tty: true
+
+volumes:
+  test-task-api:
+    driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: /home/jfarillas/test-task-php

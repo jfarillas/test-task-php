@@ -14,7 +14,9 @@
     "laravel/lumen-framework": "5.6.*",
     "laravel-doctrine/orm": "^1.4",
     "pacely/mailchimp-apiv3": "^1.0",
-    "vlucas/phpdotenv": "~2.2"
+    "vlucas/phpdotenv": "^5.1",
+    "mailchimp/mailchimp": "^2.0",
+    "mailchimp/marketing": "dev-master"
   },
   "require-dev": {
     "eoneopay/standards": "dev-master",
